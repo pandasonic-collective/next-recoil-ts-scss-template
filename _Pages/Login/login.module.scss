@@ -1,0 +1,32 @@
+.LoginPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+    .LoginContainer{
+        .LoginForm{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 350px;
+            border: 1px solid rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 25px;
+            background: rgba(0,0,0,0.05);
+            .LoginErrors{
+                display: flex;
+                flex-direction: column;
+                .LoginError{
+                    font-weight: bold;
+                    color: #ee0000;
+                }
+            }
+            .EmailInput{}
+            .PasswordInput{}
+
+        }
+        .Register{
+            margin-top: 15px;
+        }
+    }
+}

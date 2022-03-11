@@ -1,0 +1,14 @@
+@import '/styles/__global_variables.scss';
+
+.ChurchForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    h2{
+        grid-area: header;
+    }
+    label{
+        font-weight: bold;
+    }
+}

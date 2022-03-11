@@ -1,0 +1,56 @@
+// Hard Styles
+$border-radius: 10px;
+// Main Colors
+$primary-color: #000;
+$secondary-color: #aaa;
+$active-color: #a98;
+$secondary-active-color: #ccc;
+$secondary-color-black: #12f;
+$black-active-color: #111;
+
+$white: #fff;
+$black: #000;
+$grey: #7A7A7A;
+$red: rgb(230,50,50);
+// Background Colors
+$primary-background-color: $primary-color;
+$secondary-background-color: $white;
+// Text
+$primary-text-color: $black;
+$secondary-text-color: $secondary-color;
+$primary-header-text-color: $secondary-color;
+$grey-text: $grey;
+// Fonts
+$bai-font: "Bai Jamjuree", Sans-serif;
+$montserrat-font: "Montserrat", Sans-serif;
+// Buttons
+$primary-button-color: $secondary-color;
+$primary-button-color-hover: #0f0;
+$secondary-button-color: #00f;
+$secondary-button-color-hover: #ff0;
+// Box Shadows
+$box-shadow:  5px 5px 5px rgba(0,0, 0,0.5);
+// Transitions
+$transition: all .5s ease;
+$transition-1: all 1s ease;
+// Z-Index
+// Modals
+$modal-layer-4: 23;
+$modal-layer-3: 22;
+$modal-layer-2: 21;
+$modal-layer-1: 20;
+// Header
+$header-layer-4: 13;
+$header-layer-3: 12;
+$header-layer-2: 11;
+$header-layer-1: 10;
+// Foreground
+$foreground-layer-4: 4;
+$foreground-layer-3: 3;
+$foreground-layer-2: 2;
+$foreground-layer-1: 1;
+// Background
+$background-layer-1: -1;
+$background-layer-2: -2;
+$background-layer-3: -3;
+$background-layer-4: -4;

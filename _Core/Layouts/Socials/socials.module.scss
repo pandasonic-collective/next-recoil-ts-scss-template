@@ -1,0 +1,17 @@
+@import '/styles/__global_variables.scss';
+
+.socials{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .socialLink{
+        font-size: 1.5em;
+        color: $white;
+        transition: $transition;
+        margin-left: 15px;
+        &:hover{
+            color: $active-color;
+            transition: $transition;
+        }
+    }
+}

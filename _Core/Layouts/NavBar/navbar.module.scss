@@ -1,0 +1,23 @@
+@import '/styles/__global_variables.scss';
+
+.navbar{
+    display: flex;
+    .Menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            min-width: 450px;
+            height: 45px;
+            @media (max-width: 1025px) {
+                min-width: 350px;
+            }
+            li{
+                display: flex;
+            }
+        }
+    }
+}

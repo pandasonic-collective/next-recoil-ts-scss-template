@@ -1,0 +1,15 @@
+@import '/styles/__global_variables.scss';
+
+.navbarBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    color: $white;
+    font-weight: 500;
+    transition: $transition;
+    &:hover{
+        color: $active-color;
+        transition: $transition;
+    }
+}

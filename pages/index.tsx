@@ -1,16 +1,9 @@
-//Modules
-import type { NextPage } from 'next'
+import {LandingPage} from '$pages'
 
-//Page Component
-import TemplatePage from '$tempPage_page'
+const user = null
 
-const Home: NextPage = () => {
-    return (
-        <div>
-            Hello
-            <TemplatePage />
-        </div>
-    )
+const IndexPage = () => {
+    if(!user) return <LandingPage />
 }
 
-export default Home
+export default IndexPage

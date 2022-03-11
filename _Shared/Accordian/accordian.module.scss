@@ -1,0 +1,31 @@
+@import '/styles/__global_variables.scss';
+
+.accordian{
+    font-family: $bai-font;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px rgba(0,0,0,0.1) solid;
+    .accButton{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+        cursor: pointer;
+        &.isOpened{
+            color: $active-color;
+        }
+    }
+    .accContent{
+        height: 0;
+        overflow: hidden;
+        padding: 0px 5px;
+        transition: $transition-1;
+        &.isOpened{
+            height: 100px;
+            padding: 10px 5px;
+            transition: $transition-1;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import '/styles/__global_variables.scss';
+
+.FormBuilder{
+    display: grid;
+    grid-template-columns: 600px 1fr 1fr;
+    .BuilderControls{
+        border: 1px solid #777;
+        border-radius: 15px;
+        padding: 25px;
+        .BuilderOption{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            align-items: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            label{
+                white-space: nowrap;
+                margin-right: 15px;
+            }
+        }
+        .OptionEditor{
+            .Options{
+                padding: 15px;
+                border-radius: 5px;
+                border: solid 1px #777;
+                .OptionsHeader{
+                    font-weight: bold;
+                    color: $secondary-color;
+                }
+                .Option{
+                    position: relative;
+                    background: $secondary-active-color;
+                    padding: 5px 35px 5px 10px;
+                    border: solid 1px $secondary-button-color;
+                    border-radius: 50px;
+                    font-weight: bold;
+                    margin-right: 8px;
+                    .RemoveSelectOptionButton{
+                        position: absolute;
+                        right: 5px;
+                        background: transparent;
+                        border: none;
+                        color: $red;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .BuilderPreview{
+        border: 1px solid #777;
+        border-radius: 15px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        .BuilderPreviewHeader{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            h3{
+                margin: 0;
+            }
+            .AddInputToFormBtn{
+                align-self: flex-end;
+                max-width: 200px;
+            }
+        }
+        .PreviewInput{
+            margin-bottom: 25px;
+        }
+    }
+    .FormPreview{
+        border: 1px solid #777;
+        border-radius: 15px;
+        padding: 25px;
+    }
+}

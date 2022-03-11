@@ -1,0 +1,30 @@
+@import '/styles/__global_variables.scss';
+
+.dividerShape{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    svg{
+        width: calc(100% + 1.3px);
+        position: relative;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: calc(233% + 1.3px);
+        height: 68px;
+        transform: translateX(-40%) rotateY(180deg);
+        display: block;
+    }
+    .dividerShapeFill{
+        fill: $white;
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+}

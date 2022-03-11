@@ -1,0 +1,44 @@
+@import '/styles/__global_variables.scss';
+
+.SignUp{
+    display: flex;
+    gap: 10px;
+    @media (max-width: 902px){
+        flex-direction: column;
+    }
+    .Form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 350px;
+        border: 1px $primary-color solid;
+        border-radius: 10px;
+        padding: 20px;
+        background: rgba(155,155,155,.5);
+        @media (max-width: 902px){
+            width: 100%;
+        }
+        .SubmitBtn{
+            width: 100%;
+            padding: 15px 0;
+            &:hover{
+                background-color: $secondary-active-color;
+                color: $black;
+            }
+        }
+        .EmailExists{
+            font-weight: 600;
+            color: $red;
+            background: rgba(60,20,0,0.9);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    }
+    .PopConfirmMessage{
+        border: 1px $primary-color solid;
+        border-radius: 10px;
+        padding: 20px;
+        background: rgba(255,255,255,.8);
+        max-width: 500px;
+    }
+}

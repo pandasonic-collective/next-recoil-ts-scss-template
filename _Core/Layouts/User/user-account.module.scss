@@ -1,0 +1,26 @@
+@import '/styles/__global_variables.scss';
+.userAccount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        transition: $transition;
+        svg{
+            font-size: 1.3em;
+            margin-right: 10px;
+            transition: $transition;
+        }
+        &:hover{
+            color: $active-color;
+            transition: $transition;
+            svg{
+                color: $active-color;
+                transition: $transition;
+            }
+        }
+    }
+}
