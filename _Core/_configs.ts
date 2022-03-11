@@ -1,1 +1,1 @@
-export const ApplicationName = 'Kosmic Industries'
+export const ApplicationName = 'PSC Boilerplate'
