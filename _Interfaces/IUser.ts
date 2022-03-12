@@ -7,8 +7,8 @@ export interface IUser {
 
 export const DefaultUser: IUser = {
     email: null,
-    first_name: null,
-    last_name: null,
+    first_name: 'Adam',
+    last_name: 'Stark',
     zip: null
 }
 

@@ -3,7 +3,7 @@
 import type {AppProps} from 'next/app'
 import {useEffect} from 'react'
 import {onAuthStateChanged} from 'firebase/auth'
-import {useSetRecoilState} from 'recoil'
+import {useSetRecoilState, useRecoilCallback} from 'recoil'
 
 //User Atoms
 import {User} from '$core'
@@ -16,7 +16,28 @@ import {IUser, DefaultUser} from '$interface/IUser'
 
 
 const App = ({ Component, pageProps }: AppProps) => {
-    // const {UserAtoms} = User
+    const {UserAtoms} = User
+    const {User_Data_AtomFamily} = UserAtoms
+
+    const setUsersInStateAtoms = useRecoilCallback(({set}) => async () => {
+
+        //FETCH USER DATA
+        const usersIds = [1,2,3,4,5]
+        usersIds.forEach((id) => {
+            set(User_Data_AtomFamily(String(id)), {
+                email: `SomeRandom${id}@random.com`,
+                first_name: `First${id}`,
+                last_name: `Last${id}`,
+                zip: `0000${id}`,
+            })
+        })
+
+    })
+
+    useEffect(() => {
+        setUsersInStateAtoms()
+    }, [])
+
     // const {User_Data_Atom, Auth_User_Atom} = UserAtoms
     //
     // const setUserData = useSetRecoilState(User_Data_Atom)

@@ -9,5 +9,5 @@ export const SuccessResponse = (res: NextApiResponse, data: any) => {
     // if(process.env.DEBUG) {
     //     logger.basic.info(`Success: ${data}`)
     // }
-    // res.send(data)
+    res.send(data)
 }

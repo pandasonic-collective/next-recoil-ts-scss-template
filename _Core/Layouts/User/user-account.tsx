@@ -6,6 +6,10 @@ import {
     faUser
 } from '@fortawesome/free-solid-svg-icons'
 
+import {useRouter} from 'next/router'
+
+//User
+
 //User Atoms
 import {User} from '$core'
 
@@ -16,9 +20,13 @@ import Styles from './user-account.module.scss'
 
 
 const UserAccount = () => {
-    const {UserAtoms} = User
-    const {User_Data_Atom} = UserAtoms
-    const user = useRecoilValue(User_Data_Atom)
+    const router = useRouter()
+    const {id} = router.query
+
+    const {UserAtoms, UserSelectors} = User
+    const {User_Data_AtomFamily} = UserAtoms
+    const user = useRecoilValue(User_Data_AtomFamily(String(id)))
+
 
     const link = !user ? '/login' : '/account'
     const ariaLabel = !user ? 'Go to login page' : 'Go to user account'
