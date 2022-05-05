@@ -18,12 +18,12 @@ import {
 // import { } from 'firebase/storage'
 
 const config = {
-    apiKey: "AIzaSyD7--w9B9VpsUaoigUKBs83HtwMGgGcCiI",
-    authDomain: "kosmic-loop-test.firebaseapp.com",
-    projectId: "kosmic-loop-test",
-    storageBucket: "kosmic-loop-test.appspot.com",
-    messagingSenderId: "515313230212",
-    appId: "1:515313230212:web:4451f10f5cddf2fedd3dd1"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
 }
 
 export const app = initializeApp(config)
