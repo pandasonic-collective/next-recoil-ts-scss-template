@@ -5,7 +5,7 @@ import {useRef, useState, ChangeEvent} from 'react'
 import {FireAuth, FireData} from '$firebase'
 
 //Styles
-import Styles from './regForm.module.scss'
+import Styles from './styles.module.scss'
 interface IRegisterFields {
     fname: string
     lname: string
